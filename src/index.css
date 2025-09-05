@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'inter';
+    background-image: url('./assets/christina-deravedisian-UJlbhSnptTE-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+}
+
+.quiz-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-screen {
+    text-align: center;
+}
+
+.start-screen h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    font-family: "Karla", sans-serif;
+    color: #293264;
+    margin-bottom: 0.4375rem;
+}
+
+.start-screen p {
+    font-family: 'inter', sans-serif;
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    font-weight: 400;
+    color: #293264;
+    margin-bottom: 1.8125rem;
+}
+
+button {
+    width: 12.0625rem;
+    height: 3.25rem;
+    border-radius: 0.9375rem;
+    color: white;
+    background-color: #4D5B9E;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight:  500;
+     font-family: 'inter', sans-serif;
+}
+
+.question-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    flex-shrink: 1;
+}
+
+.question-text {
+    font-family: "Karla", sans-serif;
+    color: #293264;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    font-weight: 700;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    gap: 0.9375rem;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.radio-button {
+    display: none;
+}
+
+.label-button {
+    border: 1px solid #4D5B9E;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    font-size: clamp(0.75rem, 2vw, 1.2rem);
+    cursor: pointer;
+    font-weight: 500;
+    flex: 0 1 auto;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.radio-button:checked + .label-button {
+    background-color: #D6DBF5;
+}
+
+.check {
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.select-error {
+    color: red;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 950px) {
+    fieldset {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    fieldset {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .question-text {
+        font-size: 2rem;
+    }
+
+    .label-button{
+        padding: 0.375rem 2rem;
+        font-size: 1.2rem;
+    }
+    .select-error {
+    font-size: 1.25rem;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 500px) {
+    body {
+        padding: 0.5rem;
+    }
+    button {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.75rem;
+    }
+
+    .question-wrapper {
+        gap: 0.75rem;
+    }
+
+    fieldset {
+        gap: 1rem;
+    }
+
+    .label-button {
+        padding: 0.375rem 2rem;
+        font-size: 0.70rem;
+        flex-wrap: wrap;
+    }
+
+    .question-text {
+        font-size: 1.25rem;
+    }
+    .select-error {
+    font-size: 1rem;
+    }
+}
