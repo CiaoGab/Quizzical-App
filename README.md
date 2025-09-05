@@ -5,11 +5,11 @@ A lightweight quiz application built with React and Vite. The implementation and
 ## Demo / Screenshots
 Preview screenshots from the running app (files are in `src/assets/`):
 
-![Landing screen](src/assets/Screenshot 2025-09-05 141157.png)
+![Landing screen](src/assets/Screenshot%202025-09-05%20141157.png)
 
-![Quiz question view](src/assets/Screenshot 2025-09-05 141230.png)
+![Quiz question view](src/assets/Screenshot%202025-09-05%20141230.png)
 
-![Results / summary view](src/assets/Screenshot 2025-09-05 141258.png)
+![Results / summary view](src/assets/Screenshot%202025-09-05%20141258.png)
 
 ## Key features
 - Fetches quiz questions from the Open Trivia Database (free public API).
