@@ -1,5 +1,3 @@
-# React + Vite
-
 # Quizzical App
 
 A lightweight quiz application built with React and Vite. The implementation and code are mine; the idea and visual design were inspired by the Scrimba Frontend Developer course.
